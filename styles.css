@@ -1,3 +1,21 @@
-h1{
-    background-color: blueviolet;
+header{
+    text-align: center;
+    padding: 2rem 4rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+header h2{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+#inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("images/fondoCv.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
 }
