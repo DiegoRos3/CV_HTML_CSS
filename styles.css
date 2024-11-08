@@ -10,13 +10,6 @@ header h1 {
     -webkit-text-stroke: 1.5px #8dc8db;
 }
 
-header h2{
-    font-family: Consolas;
-    font-size: 2rem;
-    color: #d3eff8;
-    -webkit-text-stroke: 1.5px #8dc8db;
-}
-
 #inicio{
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("images/fondoCv.jpg");
     background-size: cover;
@@ -80,6 +73,44 @@ main{
 }
 
 
+#section_derecha{
+    grid-column: 2/4;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.sec_der{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2rem;
+
+}
+
+.sec_der h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    border-bottom: 5px solid #051a3f;
+
+    
+}
+
+.sec_der p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.sec_der ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+}
+
+
 
 
 footer{
@@ -111,7 +142,12 @@ footer h2{
     color: #051a3f;
     width: 70px;
     height: 70px;
-    transition: fill 0.3s;
+    transition: 0.3s;
+}
+
+#footer_section svg:hover{
+    width: 100px;
+    height: 100px;
 }
 
 #footer_section a{
