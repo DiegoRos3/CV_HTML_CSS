@@ -86,7 +86,6 @@ main{
     flex-direction: column;
     align-items: left;
     padding: 2rem;
-
 }
 
 .sec_der h2{
@@ -94,8 +93,6 @@ main{
     font-size: 2rem;
     text-align: left;
     border-bottom: 5px solid #051a3f;
-
-    
 }
 
 .sec_der p{
@@ -110,8 +107,89 @@ main{
     text-align: left;
 }
 
+#cajasCA{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
 
+.contAd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #8dc8db;
+}
 
+.contAd h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #051a3f;
+}
+
+.contAd iframe{
+    width: 100%;
+    height: 100%;
+    transform: scale(0.8);
+}
+
+#vid{
+    grid-column: 1/4;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario{
+    grid-column: 1/3;
+}
+
+#formulario label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#formulario input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    text-align: center;
+}
+
+#formulario textarea{
+    width: 100%;
+    height: 30%;
+    transform: scale(0.8);
+}
+
+#boton_enviar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: .8rem 1.5rem;
+    background-color: #051a3f;
+    border-radius: 1rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#audio{
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 footer{
     text-align: center;
@@ -165,4 +243,90 @@ footer h2{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+        -webkit-text-stroke: 1px #8dc8db;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #section_izquierda{
+        grid-column: 1/2;
+        padding: 1rem;
+    }
+
+    .sec_izq{
+        padding: 1rem;
+    }
+    .sec_izq h2{
+        font-size: 1.3rem;
+        border-bottom: 3px solid #051a3f; 
+    }
+    
+    .sec_izq p{
+        font-size: .6rem;
+    }
+    
+    .sec_izq ul{
+        font-size: .6rem;
+    }
+
+    #section_derecha{
+        grid-column: 2/3;
+        padding: 1rem;
+        text-align: left;
+    }
+    
+    .sec_der{
+        padding: 1rem;
+    }
+
+    .sec_der h2{
+        font-size: 1.3rem;
+        border-bottom: 3px solid #051a3f; 
+    }
+    
+    .sec_der p{
+        font-size: .6rem;
+    }
+    
+    .sec_der ul{
+        font-size: .6rem;
+    }
+
+    #cajasCA{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .contAd h3{
+        font-size: 1.2rem;
+    }
+
+    #vid{
+        grid-column: 1/2;
+    }
+    
+    #audio{
+        grid-column: 1/2;
+    }
+
+    #formulario{
+        grid-column: 1/2;
+    }
+
+    #footer_section svg:hover{
+        width: 80px;
+        height: 80px;
+    }
 }
