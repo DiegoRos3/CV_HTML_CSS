@@ -191,6 +191,10 @@ main{
     align-items: center;
 }
 
+#audio audio{
+    width: 90%;
+}
+
 footer{
     text-align: center;
     background-color: #07142b;
@@ -254,6 +258,7 @@ footer h2{
     main{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
 
     #section_izquierda{
@@ -321,8 +326,130 @@ footer h2{
         grid-column: 1/2;
     }
 
+    #audio audio{
+        width: 90%;
+    }
+
     #formulario{
         grid-column: 1/2;
+    }
+
+    #footer_section svg{
+        width: 60px;
+        height: 60px;
+    }
+
+    #footer_section svg:hover{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px){
+    header h1 {
+        font-size: 1.3rem;
+        -webkit-text-stroke: 1px #8dc8db;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #section_izquierda{
+        grid-column: 1/2;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .sec_izq{
+        padding: 1rem;
+    }
+    .sec_izq h2{
+        font-size: 1rem;
+        border-bottom: 2px solid #051a3f; 
+    }
+    
+    .sec_izq p{
+        font-size: .4rem;
+    }
+    
+    .sec_izq ul{
+        font-size: .4rem;
+    }
+
+    #section_derecha{
+        grid-column: 1/2;
+        padding: 1rem;
+        text-align: left;
+    }
+    
+    .sec_der{
+        padding: 1rem;
+    }
+
+    .sec_der h2{
+        font-size: 1rem;
+        border-bottom: 2px solid #051a3f; 
+    }
+    
+    .sec_der p{
+        font-size: .4rem;
+    }
+    
+    .sec_der ul{
+        font-size: .4rem;
+    }
+
+    #cajasCA{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .contAd h3{
+        font-size: 1rem;
+    }
+
+    #vid{
+        grid-column: 1/2;
+    }
+    
+    #audio{
+        grid-column: 1/2;
+    }
+
+    #audio audio{
+        width: 70%;
+    }
+
+    #formulario{
+        grid-column: 1/2;
+    }
+
+    #boton_enviar{
+        font-size: .8rem;
+        text-align: center;
+        padding: .6rem 1rem;
+        border-radius: 1rem;
+    }
+
+    #footer_section{
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    #footer_section a{
+        -webkit-text-stroke: .5px #8dc8db;
+        font-size: 1rem;
+    }
+
+    #footer_section svg{
+        width: 50px;
+        height: 50px;
     }
 
     #footer_section svg:hover{
