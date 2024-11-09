@@ -1,0 +1,332 @@
+header{
+    text-align: center;
+    padding: 2rem 4rem;
+}
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: #d3eff8;
+    -webkit-text-stroke: 1.5px #8dc8db;
+}
+
+#inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("images/fondoCv.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+main{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#section_izquierda{
+    grid-column: 1/2;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #8dc8db;
+}
+
+.sec_izq{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2rem;
+
+}
+
+.sec_izq h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    border-bottom: 5px solid #051a3f;
+
+    
+}
+
+.sec_izq p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.sec_izq ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.idi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2rem;
+    gap: 10px;
+}
+
+
+#section_derecha{
+    grid-column: 2/4;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.sec_der{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2rem;
+}
+
+.sec_der h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    border-bottom: 5px solid #051a3f;
+}
+
+.sec_der p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.sec_der ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#cajasCA{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.contAd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #8dc8db;
+}
+
+.contAd h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #051a3f;
+}
+
+.contAd iframe{
+    width: 100%;
+    height: 100%;
+    transform: scale(0.8);
+}
+
+#vid{
+    grid-column: 1/4;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario{
+    grid-column: 1/3;
+}
+
+#formulario label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#formulario input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    text-align: center;
+}
+
+#formulario textarea{
+    width: 100%;
+    height: 30%;
+    transform: scale(0.8);
+}
+
+#boton_enviar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: .8rem 1.5rem;
+    background-color: #051a3f;
+    border-radius: 1rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#audio{
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    background-color: #07142b;
+    padding: 4rem;
+}
+
+footer h2{
+    font-family: Consolas;
+    font-size: 2rem;
+    color: #d3eff8;
+    -webkit-text-stroke: 1.5px #8dc8db;
+    text-decoration: none;
+    
+}
+
+#footer_section{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#footer_section svg{
+    fill: #d3eff8;
+    color: #051a3f;
+    width: 70px;
+    height: 70px;
+    transition: 0.3s;
+}
+
+#footer_section svg:hover{
+    width: 100px;
+    height: 100px;
+}
+
+#footer_section a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d3eff8;
+    -webkit-text-stroke: .5px #8dc8db;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+        -webkit-text-stroke: 1px #8dc8db;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #section_izquierda{
+        grid-column: 1/2;
+        padding: 1rem;
+    }
+
+    .sec_izq{
+        padding: 1rem;
+    }
+    .sec_izq h2{
+        font-size: 1.3rem;
+        border-bottom: 3px solid #051a3f; 
+    }
+    
+    .sec_izq p{
+        font-size: .6rem;
+    }
+    
+    .sec_izq ul{
+        font-size: .6rem;
+    }
+
+    #section_derecha{
+        grid-column: 2/3;
+        padding: 1rem;
+        text-align: left;
+    }
+    
+    .sec_der{
+        padding: 1rem;
+    }
+
+    .sec_der h2{
+        font-size: 1.3rem;
+        border-bottom: 3px solid #051a3f; 
+    }
+    
+    .sec_der p{
+        font-size: .6rem;
+    }
+    
+    .sec_der ul{
+        font-size: .6rem;
+    }
+
+    #cajasCA{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .contAd h3{
+        font-size: 1.2rem;
+    }
+
+    #vid{
+        grid-column: 1/2;
+    }
+    
+    #audio{
+        grid-column: 1/2;
+    }
+
+    #formulario{
+        grid-column: 1/2;
+    }
+
+    #footer_section svg:hover{
+        width: 80px;
+        height: 80px;
+    }
+}
